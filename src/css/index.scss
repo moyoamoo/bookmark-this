@@ -1,0 +1,37 @@
+@font-face {
+  font-family: Manifont Grotesk;
+  src: url("../fonts/manifont_grotesk_bold.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Whois-mono;
+  src: url("../fonts/whois_mono.woff");
+  font-weight: normal;
+}
+
+:root {
+  --background-colour: #f8f5f0;
+  --accent-1: #fe0100;
+  --accent-2: #f35353;
+  --accent-3: #696969;
+}
+
+body {
+  background-color: var(--background-colour);
+}
+
+.primary-btn {
+  font-family: Whois-mono, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: var(--accent-1);
+  color: var(--background-colour);
+  border: none;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 2rem;
+
+  &:hover {
+    background-color: var(--accent-2);
+  }
+}

@@ -1,0 +1,40 @@
+import defaultImage from "../../assets/default_image.webp";
+import { formatDate } from "../../utils";
+
+const SearchBooks = ({ book }) => {
+  // Destructure volumeInfo and imageLinks for cleaner access
+  const { volumeInfo } = book || {};
+  const { title, authors, imageLinks, publishedDate } = volumeInfo || {};
+
+  // Fallback for missing imageLinks or thumbnail
+  const imageSrc = imageLinks?.thumbnail || defaultImage;
+  return (
+    <>
+      {book ? (
+        <div className="book-search-result">
+          <img
+            loading="lazy"
+            src={imageSrc}
+            alt={title || "Book cover"}
+            onError={(e) => {
+              e.target.src = defaultImage;
+              e.onError = null;
+            }}
+          />
+
+          <div className="search-text">
+            <p className="search-title">{title}</p>
+            <p className="search-author">
+              {authors.map((author) => {
+                return `${author + " "}`;
+              })}
+            </p>
+            <p>Date Published: {formatDate(publishedDate)}</p>
+          </div>
+        </div>
+      ) : null}
+    </>
+  );
+};
+
+export default SearchBooks;

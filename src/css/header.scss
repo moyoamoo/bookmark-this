@@ -1,0 +1,55 @@
+header {
+  padding: 1rem;
+  width: 100%;
+
+  h1 {
+    background-color: var(--background-colour);
+    font-family: Manifont Grotesk;
+    color: var(--accent-1);
+    font-size: 5rem;
+    margin: 0;
+
+    svg {
+      color: var(--accent-1);
+    }
+  }
+}
+
+.header-upper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--accent-1);
+}
+
+.search-icon {
+  width: 4rem;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  width: 100%;
+}
+
+.input-primary {
+  background: none;
+  border: none;
+  color: var(--accent-1);
+  font-family: Whois-mono, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  font-size: 2rem;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.searchbar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
