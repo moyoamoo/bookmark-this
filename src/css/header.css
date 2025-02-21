@@ -1,18 +1,16 @@
 header {
   padding: 1rem;
   width: 100%;
-
-  h1 {
-    background-color: var(--background-colour);
-    font-family: Manifont Grotesk;
-    color: var(--accent-1);
-    font-size: 5rem;
-    margin: 0;
-
-    svg {
-      color: var(--accent-1);
-    }
-  }
+}
+header h1 {
+  background-color: var(--background-colour);
+  font-family: Manifont Grotesk;
+  color: var(--accent-1);
+  font-size: 5rem;
+  margin: 0;
+}
+header h1 svg {
+  color: var(--accent-1);
 }
 
 .header-upper {
@@ -43,11 +41,10 @@ header {
   width: 80%;
   text-align: center;
   border-bottom: 2px dotted var(--accent-1);
-
-  &:focus {
-    outline: none;
-    border: none;
-  }
+}
+.input-primary:focus {
+  outline: none;
+  border: none;
 }
 
 .searchbar-container {
@@ -58,118 +55,93 @@ header {
 }
 
 /* Media Queries */
-
 /* Small Devices (max-width: 600px) */
 @media screen and (min-width: 600px) {
   h1 {
     font-size: 3.5rem;
   }
-
   .searchbar {
     padding: 1rem;
   }
-
   .input-primary {
     font-size: 1.5rem;
   }
-
   .search-icon {
     width: 3rem;
   }
 }
-
 /* Medium Devices (max-width: 768px) */
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 4rem;
   }
-
   .searchbar {
     padding: 1.5rem;
+    width: 50%;
   }
-
   .input-primary {
     font-size: 1.75rem;
-    width: 70%;
-  }
 
+  }
   .search-icon {
     width: 3.5rem;
   }
 }
-
 /* Large Devices (max-width: 1024px) */
 @media screen and (min-width: 1024px) {
   h1 {
     font-size: 4.5rem;
   }
-
   .searchbar {
     padding: 1.75rem;
   }
-
   .input-primary {
     font-size: 1.875rem;
   }
-
   .search-icon {
     width: 3.75rem;
   }
-
   .searchbar-container {
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-
   .searchbar {
     justify-content: flex-start;
-    width: 60%;
+    width: 90%;
   }
 }
-
 /* Extra Large Devices (max-width: 1440px) */
 @media screen and (min-width: 1440px) {
   h1 {
     font-size: 5rem;
   }
-
   .searchbar {
     padding: 2rem;
   }
-
   .input-primary {
     font-size: 2rem;
     width: 90%;
   }
-
   .search-icon {
     width: 4rem;
   }
-
   .searchbar {
-  
     width: 40%;
   }
-  
 }
-
 /* Ultra Large Devices (max-width: 1920px) */
 @media screen and (min-width: 1920px) {
   h1 {
     font-size: 5.5rem;
   }
-
   .searchbar {
     padding: 2.5rem;
   }
-
   .input-primary {
     font-size: 2.125rem;
   }
-
   .search-icon {
     width: 4.5rem;
   }
-  
-}
+}/*# sourceMappingURL=header.css.map */

@@ -12,11 +12,11 @@
   font-size: 1rem;
   align-items: center;
   border-bottom: 1px solid var(--accent-1);
-  img {
-    width: 90px;
-    margin-bottom: 0.3rem;
-    padding: 0.5rem;
-  }
+}
+.book-search-result img {
+  width: 90px;
+  margin-bottom: 0.3rem;
+  padding: 0.5rem;
 }
 
 .search-text {
@@ -29,29 +29,24 @@
 }
 
 .search-title {
-  font-family: Whois-mono, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Whois-mono, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1.5rem;
   color: var(--accent-1);
 }
 
 .search-author {
-  font-family: Whois-mono, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Whois-mono, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
   color: var(--accent-3);
 }
 
 .search-date {
-  font-family: Whois-mono, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Whois-mono, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1rem;
   color: var(--accent-3);
 }
 
-
 /* Media Queries */
-
 /* Small Devices (max-width: 600px) */
 @media screen and (min-width: 600px) {
   .book-search-result {
@@ -60,27 +55,20 @@
     align-items: flex-start;
     font-size: 0.9rem;
   }
-
-  .book-search-result {
-    img {
+  .book-search-result img {
     width: 70px;
     margin-bottom: 0.5rem;
-    }
   }
-
   .search-title {
     font-size: 1.25rem;
   }
-
   .search-author {
     font-size: 1rem;
   }
-
   .search-date {
     font-size: 0.9rem;
   }
 }
-
 /* Medium Devices (max-width: 768px) */
 @media screen and (min-width: 768px) {
   .book-search-result {
@@ -89,25 +77,20 @@
     align-items: flex-start;
     font-size: 1rem;
   }
-
   .book-search-result img {
     width: 80px;
     margin-bottom: 0.4rem;
   }
-
   .search-title {
     font-size: 1.35rem;
   }
-
   .search-author {
     font-size: 1.1rem;
   }
-
   .search-date {
     font-size: 1rem;
   }
 }
-
 /* Large Devices (max-width: 1024px) */
 @media screen and (min-width: 1024px) {
   .book-search-result {
@@ -115,25 +98,20 @@
     flex-direction: row;
     align-items: center;
   }
-
   .book-search-result img {
     width: 100px;
     margin-right: 1rem;
   }
-
   .search-title {
     font-size: 1.4rem;
   }
-
   .search-author {
     font-size: 1.15rem;
   }
-
   .search-date {
     font-size: 1.05rem;
   }
 }
-
 /* Extra Large Devices (max-width: 1440px) */
 @media screen and (min-width: 1440px) {
   .book-search-result {
@@ -141,25 +119,20 @@
     flex-direction: row;
     align-items: center;
   }
-
   .book-search-result img {
     width: 110px;
     margin-right: 1.2rem;
   }
-
   .search-title {
     font-size: 1.5rem;
   }
-
   .search-author {
     font-size: 1.2rem;
   }
-
   .search-date {
     font-size: 1.1rem;
   }
 }
-
 /* Ultra Large Devices (max-width: 1920px) */
 @media screen and (min-width: 1920px) {
   .book-search-result {
@@ -167,21 +140,17 @@
     flex-direction: row;
     align-items: center;
   }
-
   .book-search-result img {
     width: 120px;
     margin-right: 1.5rem;
   }
-
   .search-title {
     font-size: 1.7rem;
   }
-
   .search-author {
     font-size: 1.3rem;
   }
-
   .search-date {
     font-size: 1.2rem;
   }
-}
+}/*# sourceMappingURL=search.css.map */

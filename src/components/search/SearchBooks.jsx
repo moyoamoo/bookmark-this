@@ -8,7 +8,7 @@ const SearchBooks = () => {
     <>
       <section className="search-result-container">
         {searchResults.map((book) => {
-          return <SearchBook book={book} />;
+          return <SearchBook book={book} key={book.id}/>;
         })}
       </section>
     </>

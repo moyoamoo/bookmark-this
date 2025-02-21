@@ -1,5 +1,5 @@
 import defaultImage from "../../assets/default_image.webp";
-import { formatDate } from "../../utils";
+import { formatDate, formatAuthors } from "../../utils";
 
 const SearchBooks = ({ book }) => {
   // Destructure volumeInfo and imageLinks for cleaner access
@@ -24,12 +24,10 @@ const SearchBooks = ({ book }) => {
 
           <div className="search-text">
             <p className="search-title">{title}</p>
-            <p className="search-author">
-              {authors.map((author) => {
-                return `${author + " "}`;
-              })}
+            <p className="search-author">{formatAuthors(authors)}</p>
+            <p className="search-date">
+              Date Published: {formatDate(publishedDate)}
             </p>
-            <p>Date Published: {formatDate(publishedDate)}</p>
           </div>
         </div>
       ) : null}
