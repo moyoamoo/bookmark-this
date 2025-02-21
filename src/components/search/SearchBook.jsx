@@ -1,8 +1,11 @@
+import { useSelector } from "react-redux";
 import defaultImage from "../../assets/default_image.webp";
 import { formatDate, formatAuthors } from "../../utils";
+import { NavLink } from "react-router";
 
 const SearchBooks = ({ book }) => {
-  // Destructure volumeInfo and imageLinks for cleaner access
+  const token = useSelector(selectToken);
+
   const { volumeInfo } = book || {};
   const { title, authors, imageLinks, publishedDate } = volumeInfo || {};
 
@@ -29,6 +32,8 @@ const SearchBooks = ({ book }) => {
               Date Published: {formatDate(publishedDate)}
             </p>
           </div>
+
+        
         </div>
       ) : null}
     </>
