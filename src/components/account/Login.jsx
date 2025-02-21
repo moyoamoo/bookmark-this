@@ -5,6 +5,7 @@ import FormBtn from "./FormBtn";
 import { loginSchema } from "../../validation/joiSchemas";
 import { onFormInput } from "../../validation/formInput";
 import { loginUser } from "../../requests/loginUser";
+import { setWindow } from "../../redux/accountSlice";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -12,7 +13,7 @@ const Login = () => {
   const [errors, setErrors] = useState({});
 
   const callback = () => {
-    dispatch(setWindow(0));
+    dispatch(setWindow(1));
   };
 
   return (

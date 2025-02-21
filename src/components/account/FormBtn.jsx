@@ -1,3 +1,5 @@
+
+
 const FormBtn = ({ type, className, text, func }) => {
   return (
     <>
@@ -5,7 +7,7 @@ const FormBtn = ({ type, className, text, func }) => {
         className={className}
         type={type}
         onClick={() => {
-          func && func;
+          func && func();
         }}
       >
         {text}

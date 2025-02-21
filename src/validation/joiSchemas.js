@@ -35,4 +35,5 @@ export const signUpSchema = {
     .email({ tlds: { allow: false } })
     .required(),
   password: Joi.string().min(4).required(),
+  username: Joi.string().min(5).max(19).required(),
 };
